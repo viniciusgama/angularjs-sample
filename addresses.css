@@ -2,3 +2,15 @@
 	width: 120px;
 	float: left;
 }
+div.address{
+	width: 400px;
+}
+div.remove{
+	float: right;
+}
+div.even{
+	background-color: gray;
+}
+div.odd{
+	background-color: white;
+}

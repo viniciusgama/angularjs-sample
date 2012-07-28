@@ -8,7 +8,10 @@
 </head>
 <body ng-controller="AddressesController">
 	<h1>Addresses</h1>
-	<div class="address" ng-repeat="address in addresses">
+	<div class="address" ng-repeat="address in addresses" ng-clas-odd="'odd'" ng-class-even="'even'">
+		<div class="remove">
+			[<a href="" ng-click="addresses.splice($index, 1)">x</a>]
+		</div>
 		<p>
 			<label>Address:</label>
 			<textarea ng-model="address.address"></textarea>
@@ -29,8 +32,7 @@
 			<label>State/Province:</label>
 			<input type="text" ng-model="address.state">
 		</p>
-		[<a href="" ng-click="addresses.splice($index, 1)">Remove</a>]
-		<hr>
+		
 	</div>
 	<input type="button" value="Add address" ng-click="addNewAddress()" />
 </body>
