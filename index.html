@@ -1,6 +1,7 @@
 <!doctype html>
 <html ng-app>
 <head>
+	<title>List of addresses</title>
 	<script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
 	<script type="text/javascript" src="addresses.js"></script>
 	<link rel="stylesheet" type="text/css" href="addresses.css">
@@ -28,6 +29,7 @@
 			<label>State/Province:</label>
 			<input type="text" ng-model="address.state">
 		</p>
+		[<a href="" ng-click="addresses.splice($index, 1)">Remove</a>]
 		<hr>
 	</div>
 	<input type="button" value="Add address" ng-click="addNewAddress()" />

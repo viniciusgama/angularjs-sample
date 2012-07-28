@@ -1,8 +1,7 @@
 function AddressesController($scope){
-	$scope.addresses = [
-	];
+	$scope.addresses = [];
 
 	$scope.addNewAddress = function(){
-		$scope.addresses.push({address:''});
+		$scope.addresses.push({address:'', city:'', zipcode:'', country:'', country:'', state:''});
 	};
 }
