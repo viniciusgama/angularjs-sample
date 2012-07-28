@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+	<script type="text/javascript" src="addresses.js"></script>
+	<link rel="stylesheet" type="text/css" href="addresses.css">
+</head>
+<body ng-controller="AddressesController">
+	<h1>Addresses</h1>
+	<div ng-repeat="address in addresses">
+		<label>Address:</label>
+		<input type="text" ng-model="address.address"> 
+	</div>
+	<input type="button" value="Add address" ng-click="addNewAddress()" />
+</body>
+</html>
