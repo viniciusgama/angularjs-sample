@@ -7,9 +7,28 @@
 </head>
 <body ng-controller="AddressesController">
 	<h1>Addresses</h1>
-	<div ng-repeat="address in addresses">
-		<label>Address:</label>
-		<input type="text" ng-model="address.address"> 
+	<div class="address" ng-repeat="address in addresses">
+		<p>
+			<label>Address:</label>
+			<textarea ng-model="address.address"></textarea>
+		</p>
+		<p>
+			<label>City:</label>
+			<input type="text" ng-model="address.city">
+		</p>
+		<p>
+			<label>Zip Code:</label>
+			<input type="text" ng-model="address.zipcode">
+		</p>
+		<p>
+			<label>Country:</label>
+			<input type="text" ng-model="address.country">
+		</p>
+		<p>
+			<label>State/Province:</label>
+			<input type="text" ng-model="address.state">
+		</p>
+		<hr>
 	</div>
 	<input type="button" value="Add address" ng-click="addNewAddress()" />
 </body>
